@@ -12,13 +12,6 @@ image:
 # How many web UI instances to run
 web:
   replicacount: 1
-  resources:
-    limits:
-      cpu: 500m
-      memory: 500Mi
-    requests:
-      cpu: 300m
-      memory: 300Mi
   env:
     - name: GITHUB_APP_ID
       value:
@@ -39,13 +32,6 @@ web:
 # How many cron instances to run
 cron:
   replicacount: 1
-  resources:
-    limits:
-      cpu: 200m
-      memory: 200Mi
-    requests:
-      cpu: 100m
-      memory: 100Mi
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -56,13 +42,6 @@ cron:
 # How many worker instances to run
 worker:
   replicacount: 2
-  resources:
-    limits:
-      cpu: 300m
-      memory: 500Mi
-    requests:
-      cpu: 100m
-      memory: 100Mi
   nodeSelector: {}
   tolerations: []
   affinity: {}

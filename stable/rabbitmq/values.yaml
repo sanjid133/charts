@@ -235,7 +235,7 @@ persistence:
   size: 8Gi
 
   # persistence directory, maps to the rabbitmq data directory
-  path: /opt/bitnami/rabbitmq/var/lib/rabbitmq
+  path: /storage/rabbitmq/var/lib/rabbitmq
 
 ## Configure resource requests and limits
 ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
